@@ -7,7 +7,9 @@
 	<script src='./three.min.js'></script>
 	<!-- ar.js -->
 	<script src="./build/ar.js"></script>
-	<script>THREEx.ArToolkitContext.baseURL = './'</script>
+	<script>
+		THREEx.ArToolkitContext.baseURL = './'
+	</script>
 </head>
 
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
@@ -70,6 +72,7 @@
 		window.addEventListener('resize', function () {
 			onResize()
 		})
+
 		function onResize() {
 			arToolkitSource.onResize()
 			arToolkitSource.copySizeTo(renderer.domElement)
